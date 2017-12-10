@@ -1,0 +1,60 @@
+# --
+# DjangoPowerDNS - A PowerDNS web interface
+# Copyright (C) 2017 McLive
+# --
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU AFFERO General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+# --
+
+from django import forms
+from django.forms import ModelForm
+
+from dpdns.models import Domains, DomainAccess
+
+
+class LoginForm(forms.Form):
+    username = forms.CharField(max_length=18)
+    password = forms.CharField(widget=forms.PasswordInput())
+
+
+class DomainAddForm(ModelForm):
+    class Meta:
+        model = Domains
+        fields = ['name']
+
+        widgets = {
+            'name': forms.TextInput(
+                attrs={
+                    'placeholder': 'The name of your Domain.'
+                }),
+        }
+
+
+class DomainUserAddForm(ModelForm):
+    class Meta:
+        model = DomainAccess
+        fields = ['user']
+
+        """widgets = {
+            'name': forms.TextInput(
+                attrs={
+                    'placeholder': 'The name of your Domain.'
+                }),
+        }"""
+
+
+class DomainClaimForm(forms.Form):
+    domain = forms.ModelMultipleChoiceField(
+        queryset=Domains.objects.filter(domain_accesses__isnull=True),
+        widget=forms.CheckboxSelectMultiple,
+    )
