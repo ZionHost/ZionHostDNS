@@ -1,5 +1,5 @@
 # --
-# DjangoPowerDNS - A PowerDNS web interface
+# ZionHostDNS - A PowerDNS web interface
 # Copyright (C) 2017 McLive
 # --
 # This program is free software: you can redistribute it and/or modify
@@ -38,7 +38,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils.encoding import python_2_unicode_compatible
 
-from DjangoPowerDNS import settings
+from ZionHostDNS import settings
 
 
 class Comments(models.Model):

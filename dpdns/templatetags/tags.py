@@ -1,5 +1,5 @@
 # --
-# DjangoPowerDNS - A PowerDNS web interface
+# ZionHostDNS - A PowerDNS web interface
 # Copyright (C) 2017 McLive
 # --
 # This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import datetime
 
 from django.urls import reverse
 
-from DjangoPowerDNS import settings
+from ZionHostDNS import settings
 
 register = template.Library()
 

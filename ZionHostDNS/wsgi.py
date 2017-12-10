@@ -1,5 +1,5 @@
 # --
-# DjangoPowerDNS - A PowerDNS web interface
+# ZionHostDNS - A PowerDNS web interface
 # Copyright (C) 2017 McLive
 # --
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 # --
 
 """
-WSGI config for DjangoPowerDNS project.
+WSGI config for ZionHostDNS project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -29,6 +29,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DjangoPowerDNS.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ZionHostDNS.settings")
 
 application = get_wsgi_application()

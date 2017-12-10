@@ -1,6 +1,6 @@
-# DjangoPowerDNS
+# ZionHostDNS
 
-DjangoPowerDNS is a new PowerDNS webinterface written in Python and powered by Django.
+ZionHostDNS is a new PowerDNS webinterface written in Python and powered by Django.
 
 
 ## Features
@@ -13,7 +13,7 @@ ___
 
 ### Tech
 
-DjangoPowerDNS uses awesome open source tools!
+ZionHostDNS uses awesome open source tools!
 
 * [Django](https://www.djangoproject.com/)
 * [Knockout.js](http://knockoutjs.com/)
@@ -39,19 +39,16 @@ Install the following dependencies:
 
 ```sh
 $ apt update
-$ apt install python2.7
-$ apt install python-pip
-$ apt install git
-$ apt install uwsgi
-$ apt install python-mysqldb
-$ apt install mysql-client
+$ apt install python2.7 python-pip git uwsgi python-mysqldb
+For mysql:
+$ apt install mysql-client libmysqlclient-dev
 For mariadb:
 $ apt install libmariadbclient-dev
 ```
 
 Clone the repository
 ```sh
-$ git clone https://github.com/McLive/DjangoPowerDNS.git
+$ git clone https://github.com/ZionHost/ZionHostDNS.git
 ```
 
 Install and setup the virtualenv
@@ -66,8 +63,8 @@ Install the python requirements
 $ pip install -r requirements.txt
 ```
 
-* Rename `DjangoPowerDNS/settings.py.dist` to `DjangoPowerDNS/settings.py`
-* Change MySQL settings and secret key in `DjangoPowerDNS/settings.py`
+* Rename `ZionHostDNS/settings.py.dist` to `ZionHostDNS/settings.py`
+* Change MySQL settings and secret key in `ZionHostDNS/settings.py`
 
 Apply migrations
 ```sh

@@ -1,5 +1,5 @@
 # --
-# DjangoPowerDNS - A PowerDNS web interface
+# ZionHostDNS - A PowerDNS web interface
 # Copyright (C) 2017 McLive
 # --
 # This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
-""""DjangoPowerDNS URL Configuration
+""""ZionHostDNS URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/

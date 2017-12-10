@@ -1,5 +1,5 @@
 # --
-# DjangoPowerDNS - A PowerDNS web interface
+# ZionHostDNS - A PowerDNS web interface
 # Copyright (C) 2017 McLive
 # --
 # This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
-from DjangoPowerDNS import settings
+from ZionHostDNS import settings
 
 
 def enabled_record_types(request):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # --
-# DjangoPowerDNS - A PowerDNS web interface
+# ZionHostDNS - A PowerDNS web interface
 # Copyright (C) 2017 McLive
 # --
 # This program is free software: you can redistribute it and/or modify
@@ -35,7 +35,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes
 from rest_framework.response import Response
 
-from DjangoPowerDNS import settings
+from ZionHostDNS import settings
 from dpdns.api import TokenAuthentication
 from dpdns.forms import LoginForm, DomainAddForm, DomainUserAddForm, DomainClaimForm
 from dpdns.serializers import RecordSerializer
